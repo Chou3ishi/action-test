@@ -92,38 +92,9 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <plugin>
-                <groupId>org..generator</groupId>
-                <artifactId>-generator-maven-plugin</artifactId>
-                <version>1.4.0</version>
-                <executions>
-                    <execution>
-                        <id>Generate  Artifacts</id>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <verbose>true</verbose>
-                    <overwrite>true</overwrite>
-                    <configurationFile>${basedir}/src/main/resources/generatorConfig.xml</configurationFile>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>mysql</groupId>
-                        <artifactId>mysql-connector-java</artifactId>
-                        <version>${mysql.version}</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
         </plugins>
     </build>
     <repositories>
-        <!-- <repository>
-            <id>thomas-api</id>
-            <url>http://localhost:8081/repository/thomas-api/</url>
-        </repository> -->
         <repository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
